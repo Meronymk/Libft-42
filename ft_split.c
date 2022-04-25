@@ -6,14 +6,14 @@
 /*   By: krochefo <krochefo@student.42quebec.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/01 10:26:57 by krochefo          #+#    #+#             */
-/*   Updated: 2022/04/14 15:28:02 by krochefo         ###   ########.fr       */
+/*   Updated: 2022/04/21 13:43:26 by krochefo         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 // Return param2 bytes of memory area from param1.
-char	*ft_strndup(const char *s, size_t n)
+static char	*ft_strndup(const char *s, size_t n)
 {
 	size_t	i;
 	char	*str;
@@ -35,7 +35,7 @@ char	*ft_strndup(const char *s, size_t n)
 }
 
 // Free memory of param1.
-char	**ft_freemem(char **list)
+static char	**ft_freemem(char **list)
 {
 	size_t	j;
 
